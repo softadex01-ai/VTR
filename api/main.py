@@ -19,8 +19,17 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'C
 from model.cloth_masker import AutoMasker
 from model.pipeline import CatVTONPipeline
 from utils import resize_and_crop, resize_and_padding, init_weight_dtype
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="VTRO VTON API", description="Headless API for Virtual Try-On using CatVTON")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Global variables for models to keep them loaded in memory
 pipeline = None
