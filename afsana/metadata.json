@@ -1,0 +1,10 @@
+{
+  "name": "AFSANA - Modern UI Kit",
+  "description": "A high-end React landing page featuring a premium glassmorphism navbar, a dynamic hero section with AI-powered copywriting using Gemini 3 Flash.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
