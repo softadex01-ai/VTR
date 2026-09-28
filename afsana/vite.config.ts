@@ -9,6 +9,14 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        proxy: {
+          '/api/try-on': {
+            target: 'https://scheduled-maker-file-camera.trycloudflare.com',
+            changeOrigin: true,
+            secure: false,
+            rewrite: (path) => path.replace(/^\/api\/try-on/, '/try-on')
+          }
+        }
       },
       plugins: [react(), tailwindcss()],
       define: {

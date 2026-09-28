@@ -2,6 +2,13 @@
   publish = "dist"
   command = "npm run build"
 
+# API Proxy to bypass CORS and Mixed Content issues when live on Netlify
+[[redirects]]
+  from = "/api/try-on"
+  to = "https://scheduled-maker-file-camera.trycloudflare.com/try-on"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
