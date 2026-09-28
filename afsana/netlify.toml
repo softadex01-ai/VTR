@@ -5,7 +5,7 @@
 # API Proxy to bypass CORS and Mixed Content issues when live on Netlify
 [[redirects]]
   from = "/api/try-on"
-  to = "https://bass-consequently-titans-processing.trycloudflare.com/try-on"
+  to = "https://treasure-buildings-kenny-profit.trycloudflare.com/try-on"
   status = 200
   force = true
 

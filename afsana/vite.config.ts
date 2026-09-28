@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
         proxy: {
           '/api/try-on': {
-            target: 'https://bass-consequently-titans-processing.trycloudflare.com',
+            target: 'https://treasure-buildings-kenny-profit.trycloudflare.com',
             changeOrigin: true,
             secure: false,
             rewrite: (path) => path.replace(/^\/api\/try-on/, '/try-on')
